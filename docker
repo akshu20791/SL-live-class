@@ -60,7 +60,13 @@ docker run -dt --name c04 ubuntu
 docker ps
 
 
+### to remove a container
 
+docker rm c01
+
+## to remove an image
+
+docker rmi ubuntu
 
 
 

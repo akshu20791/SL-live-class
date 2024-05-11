@@ -1,0 +1,25 @@
+## To see the list of the images present in the local registry 
+
+> docker images 
+
+## i want to create a container with ubuntu as a base image
+
+> docker run -it --name c01 ubuntu /bin/bash 
+  # you will enter inside the container
+  touch file1
+   apt update -y
+  apt install apache2 -y
+  which apache2
+  ls
+ 
+## to come out of the container press ctrl p and ctrl q 
+
+
+## to see the list of all the running containers
+docker ps 
+
+
+(you can also use docker ps -a to show the list of all the containers)
+
+
+

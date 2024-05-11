@@ -23,3 +23,82 @@ docker ps
 
 
 
+## to enter inside the container 
+
+docker exec -it c01 /bin/bash
+
+####Ques: docker stop containername will stop the container...can we enter inside a stopped container?
+  Sol:
+
+  docker stop c01
+  docker ps -a
+   docker exec -it c01 /bin/bash  
+    # you will get error message
+  docker start c01
+   docker exec -it c01 /bin/bash  
+
+you will be able to enter inside container....
+ctrl p and ctrl q to come out of the container
+
+
+################
+
+### We can create another container but you cannot create two containers with same name
+
+
+> docker run -it --name c02 ubuntu /bin/bash
+
+press ctrl p and ctrl q to come out of container
+
+
+## Everytime we are entering the container..suppose i want to create a container but i dont want to enter inside the container?
+
+
+
+docker run -dt --name c04 ubuntu 
+
+docker ps
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

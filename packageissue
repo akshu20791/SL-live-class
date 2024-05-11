@@ -1,0 +1,5 @@
+apt purge openjdk*
+java --version
+apt install openjdk-11-jdk -y
+mvn --version
+apt install maven -y
